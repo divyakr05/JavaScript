@@ -15,7 +15,7 @@ var browser = "firefox";
 //variable re-initialization is allowed in JS
 browser = "edge";
 console.log(browser);
-//default value of var keyword is 'undefined' if it is not declared
+//default value of var keyword is 'undefined' if it is not initialized
 var a;
 console.log(a);
 a = "hello world";
@@ -39,6 +39,10 @@ if(time > 3){
 }
 console.log(msg);
 
+//default value of const keyword is 'undefined' if it is not initialized
+let i;
+console.log(i);
+
 //let re-declaration is not allowed in JS
 let m = 10;
 //let m = 20;//this will throw error 'Identifier 'a' has already been declared'
@@ -54,3 +58,25 @@ console.log(n);
 const days = 7;
 //days = 8; //this will throw error 'Assignment to constant variable'
 console.log(days);
+
+//const declaration must be initialized
+//const months; //this will throw error
+
+// "***************************************************************************************"
+
+//data type - number,string,boolean,null,undefined,
+let q = 4
+console.log(q)
+console.log(typeof(q))
+
+let p = "hello good morning"
+console.log(p)
+console.log(typeof(p))
+
+let r = true
+console.log(r)
+console.log(typeof(r))
+
+let check = null
+console.log(check)
+console.log(typeof(check))
